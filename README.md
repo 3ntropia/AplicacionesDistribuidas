@@ -1,4 +1,4 @@
-# AplicacionesDistribuidas
+# Aplicaciones Distribuidas
 
 ##Descargar Git para Eclipse
 
