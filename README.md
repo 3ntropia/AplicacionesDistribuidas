@@ -1,5 +1,7 @@
 # Aplicaciones Distribuidas
 
+El que quiera contribuir y aportar a la causa que haga Pull request.
+
 ##Descargar Git para Eclipse
 
 - To install via one of the update site URLs listed below, copy and paste it into the “Help > Install new software” dialog.
