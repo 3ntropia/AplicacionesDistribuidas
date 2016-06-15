@@ -6,7 +6,7 @@
 
 >http://download.eclipse.org/egit/updates 
 
-Back up de BD. 
+# Back up de BD. 
 
 ###Convenios
 >https://dl.dropboxusercontent.com/u/79252417/Bck/Convenios.bak
@@ -17,7 +17,7 @@ Back up de BD.
 ###Restaurante
 >https://dl.dropboxusercontent.com/u/79252417/Bck/Restaurante.bak
 
-##How to Restore a Database Backup Using .bak file in MS SQL Server
+#How to Restore a Database Backup Using .bak file in MS SQL Server
 
 - Open SQL Server Management Studio in Object Explorer Right Click on ‘Databases’ Node and select ‘Restore Database’
 - Restore Database’ Dialog will be displayed on the General page
