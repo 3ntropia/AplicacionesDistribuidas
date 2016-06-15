@@ -1,3 +1,3 @@
 ###TIP
 
-Este proyecto tiene dependencias con el de *_Jugadores_* y *_Final-AD-Base_*
+Este proyecto tiene dependencias con el de **Jugadores** y **Final-AD-Base**
