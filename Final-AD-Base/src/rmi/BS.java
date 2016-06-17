@@ -15,10 +15,18 @@ public class BS {
     public void publicarServicio() {
 
         try {
-            IServicio servicio = new Servicio();
+        	//propieda para enlazar un archivo de texto "java.policy" con la propiedad de java. 
+        	IServicio servicio = new Servicio();
+    		System.setProperty("java.security.policy", "java.policy");
+    		//
+    		System.setProperty("java.rmi.server.codebase", IServicio.class.getProtectionDomain().getCodeSource().getLocation().toString());
+    		if(System.getSecurityManager() == null) {
+    			//Establece un sistema de seguridad. 
+//                System.setSecurityManager(new SecurityManager());
+            }
             IServicio stub = (IServicio) UnicastRemoteObject.exportObject(servicio, 0);
             LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
-            Naming.rebind("//localhost/ServicioJugadores", stub);
+            Naming.rebind("ServicioJugadores", stub);
             verVinculos();
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -43,7 +51,7 @@ public class BS {
 
     public void cerrar() {
         try {
-            Naming.unbind("GestionUsuarios");
+            Naming.unbind("ServicioJugadores");
         } catch (Exception e) {
         } finally {
             System.exit(0);

@@ -2,6 +2,12 @@
     <wb-module deploy-name="Final-AD-Web">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="Final-AD-Base.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Final-AD-Base/Final-AD-Base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Jugadores-AD.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Jugadores-AD/Jugadores-AD">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="Final-AD-Web"/>
         <property name="java-output-path" value="/Final-AD-Web/build/classes"/>
     </wb-module>

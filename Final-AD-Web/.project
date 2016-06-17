@@ -3,6 +3,8 @@
 	<name>Final-AD-Web</name>
 	<comment></comment>
 	<projects>
+		<project>Final-AD-Base</project>
+		<project>Jugadores-AD</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
