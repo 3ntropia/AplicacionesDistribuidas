@@ -4,6 +4,7 @@ import entities.ClubBean;
 import hbt.HibernateUtil;
 import org.hibernate.classic.Session;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,6 +28,22 @@ public class ClubDao {
     public List<ClubBean> clubesPorZona(String zona) {
         Session s = HibernateUtil.getSessionFactory().openSession();
         return s.createQuery("from ClubBean c where c.nroZona =" + zona).list();
+    }
+    
+    public List <ClubBean> clubesYJugadores(){
+    	Session s = HibernateUtil.getSessionFactory().openSession();
+    	List <Object []> listado = s.createQuery("Select c.idClub,c.nombre from ClubBean c").list();
+    	List <ClubBean> clubBeansList = new ArrayList <ClubBean>();
+    	int i=0;
+    	for(Object [] row : listado){
+    		ClubBean c = new ClubBean();
+    		c.setIdClub((Integer) row[i]);
+    		i++;
+    		c.setNombre((String) row[i]);
+    		i=0;
+    		clubBeansList.add(c);
+    	}
+    	return clubBeansList;
     }
 
 

@@ -1,5 +1,8 @@
 package main;
+import java.util.List;
+
 import controlador.Controlador;
+import entities.ClubBean;
 import negocio.Club;
 import negocio.Jugador;
 
@@ -24,8 +27,13 @@ Main {
 
         System.out.println("Cantidad de partidos ganados: " + instancia.cantidadPartidosGanados(a));
 
-
         for (Club c: instancia.obtenerGanadoresPorFecha(1)) {
+            System.out.println(c.toString());
+        }
+        
+        System.out.println("LISTADO CON VARIOS ARGUMENTOS");
+        List <ClubBean>listadoClubJugador = instancia.obtenerClubesJugadores();
+        for (ClubBean c: listadoClubJugador) {
             System.out.println(c.toString());
         }
     }

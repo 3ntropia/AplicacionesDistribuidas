@@ -13,5 +13,17 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/hibernate-commons-annotations-4.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/jtds-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/martinh/Dropbox/Facultad/Aplicaciones Distribuidas/Libreria Hibernate/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

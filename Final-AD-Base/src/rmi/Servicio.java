@@ -4,6 +4,7 @@ import controlador.Controlador;
 import dto.ClubDto;
 
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,12 +19,20 @@ public class Servicio implements IServicio {
     }
 
     @Override
-    public List<ClubDto> clubDtoList() throws RemoteException{
+    public List<ClubDto> clubDtoList(){
         return instancia.clubDtoList();
     }
 
     @Override
-    public List<ClubDto> clubDtoPorZona(String zona) throws RemoteException {
-        return instancia.clubDtoPorZona(zona);
+    public List<ClubDto> clubDtoPorZona(String zona) {
+    	List <ClubDto> clubes = new ArrayList <ClubDto>();
+    	for(int i = 0;i<50;i++){
+    		ClubDto c = new ClubDto ();
+    		c.setIdClub(1);
+    		c.setNombre(String.valueOf(i));
+    		clubes.add(c);
+    	}
+    	return clubes;
+//    	return instancia.clubDtoPorZona(zona);
     }
 }

@@ -3,6 +3,7 @@
 	<name>Final-AD-Base</name>
 	<comment></comment>
 	<projects>
+		<project>Jugadores-AD</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

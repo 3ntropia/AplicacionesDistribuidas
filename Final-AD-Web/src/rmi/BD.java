@@ -9,7 +9,9 @@ import java.rmi.RemoteException;
  * Created by martinh on 13/6/2016.
  */
 public class BD {
+	
     public static IServicio obtenerServicioJugadores(){
+    	
         try {
             return (IServicio) Naming.lookup("ServicioJugadores");
         } catch (NotBoundException e) {
@@ -21,4 +23,6 @@ public class BD {
         }
         return null;
     }
+    
+    
 }

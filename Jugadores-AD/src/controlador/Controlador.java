@@ -1,5 +1,6 @@
 package controlador;
 
+import dao.ClubDao;
 import dao.JugadorDao;
 import dao.PartidoDao;
 import entities.ClubBean;
@@ -67,6 +68,10 @@ public class Controlador {
 
     public List <Club> obtenerGanadoresPorFecha(int numeroFecha){
         return UtilJugadores.clubBeanToClub(PartidoDao.getInstancia().obtenerGanadoresPorFecha(numeroFecha));
+    }
+    
+    public List <ClubBean> obtenerClubesJugadores(){
+    	return ClubDao.getInstancia().clubesYJugadores();
     }
 
 }

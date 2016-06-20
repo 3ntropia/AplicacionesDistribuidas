@@ -14,6 +14,10 @@ public class ClubDto implements Serializable {
     private List <PartidoDto> localesList;
     private List <PartidoDto> visitantesList;
 
+    public ClubDto(){
+    	
+    }
+    
     public ClubDto(Integer idClub, String nombre, Integer nroZona, List<JugadorDto> jugadorList, List<PartidoDto> localesList, List<PartidoDto> visitantesList) {
         this.idClub = idClub;
         this.nombre = nombre;

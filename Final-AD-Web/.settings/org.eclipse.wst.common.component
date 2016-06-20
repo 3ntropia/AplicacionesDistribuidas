@@ -2,6 +2,7 @@
     <wb-module deploy-name="Final-AD-Web">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/lib"/>
         <dependent-module archiveName="Final-AD-Base.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Final-AD-Base/Final-AD-Base">
             <dependency-type>uses</dependency-type>
         </dependent-module>
