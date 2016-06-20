@@ -19,6 +19,7 @@ public class Controlador {
     public List <Ingrediente> obtenerIngredientes(Plato plato){
         return null;
     }
+    
 
     public Ingrediente cantidadIngredientes(Unidad unidad){
         return null;
