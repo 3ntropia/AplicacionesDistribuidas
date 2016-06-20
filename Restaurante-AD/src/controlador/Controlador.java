@@ -15,8 +15,7 @@ public class Controlador {
     private List<Ingrediente> ingredienteList;
     private List<Unidad> unidadList;
     private List<Plato> platoList;
-
-    
+ 
     public List <Ingrediente> obtenerIngredientes(Plato plato){
         return null;
     }
