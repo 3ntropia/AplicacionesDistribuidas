@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "proyectos")
 public class ProyectoBean extends PersistentObjectBean {
     private String nombre;
-    @Column(name = "aÃ±o", columnDefinition = "smallint")
+    @Column(name = "año", columnDefinition = "smallint")
     private Integer anio;
     @ManyToMany
     @JoinTable(name="asignaciones",
